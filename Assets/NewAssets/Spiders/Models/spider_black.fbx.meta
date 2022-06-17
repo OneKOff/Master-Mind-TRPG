@@ -1,0 +1,217 @@
+fileFormatVersion: 2
+guid: 2761082c7dc2b614392d66e8f87713e8
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Ass
+    100002: Ass_end
+    100004: Atack1
+    100006: Atack1_end
+    100008: BodyIK.001
+    100010: BodyIK.001_end
+    100012: Bone
+    100014: Bone.002
+    100016: L.Bone.003
+    100018: L.Bone.004
+    100020: L.Bone.004_end
+    100022: L.Bone.006
+    100024: L.Bone.007
+    100026: L.Bone.007_end
+    100028: L.Bone.009
+    100030: L.Bone.010
+    100032: L.Bone.010_end
+    100034: L.Bone.012
+    100036: L.Bone.013
+    100038: L.Bone.013_end
+    100040: L.Bone.014
+    100042: L.Bone.014_end
+    100044: L.Leg
+    100046: L.Leg.001
+    100048: L.Leg.002
+    100050: L.Leg.003
+    100052: L.LEG_IK.005
+    100054: L.LEG_IK.005_end
+    100056: L.LEG_IK.008
+    100058: L.LEG_IK.008_end
+    100060: L.LEG_IK.011
+    100062: L.LEG_IK.011_end
+    100064: L.LegIK.015
+    100066: L.LegIK.015_end
+    100068: R.Bone.003
+    100070: R.Bone.004
+    100072: R.Bone.004_end
+    100074: R.Bone.006
+    100076: R.Bone.007
+    100078: R.Bone.007_end
+    100080: R.Bone.009
+    100082: R.Bone.010
+    100084: R.Bone.010_end
+    100086: R.Bone.012
+    100088: R.Bone.013
+    100090: R.Bone.013_end
+    100092: R.Bone.014
+    100094: R.Bone.014_end
+    100096: R.Leg
+    100098: R.Leg.001
+    100100: R.Leg.002
+    100102: R.Leg.003
+    100104: R.LEG_IK.005
+    100106: R.LEG_IK.005_end
+    100108: R.LEG_IK.008
+    100110: R.LEG_IK.008_end
+    100112: R.LEG_IK.011
+    100114: R.LEG_IK.011_end
+    100116: Spider
+    100118: Spider.005
+    100120: //RootNode
+    400000: Ass
+    400002: Ass_end
+    400004: Atack1
+    400006: Atack1_end
+    400008: BodyIK.001
+    400010: BodyIK.001_end
+    400012: Bone
+    400014: Bone.002
+    400016: L.Bone.003
+    400018: L.Bone.004
+    400020: L.Bone.004_end
+    400022: L.Bone.006
+    400024: L.Bone.007
+    400026: L.Bone.007_end
+    400028: L.Bone.009
+    400030: L.Bone.010
+    400032: L.Bone.010_end
+    400034: L.Bone.012
+    400036: L.Bone.013
+    400038: L.Bone.013_end
+    400040: L.Bone.014
+    400042: L.Bone.014_end
+    400044: L.Leg
+    400046: L.Leg.001
+    400048: L.Leg.002
+    400050: L.Leg.003
+    400052: L.LEG_IK.005
+    400054: L.LEG_IK.005_end
+    400056: L.LEG_IK.008
+    400058: L.LEG_IK.008_end
+    400060: L.LEG_IK.011
+    400062: L.LEG_IK.011_end
+    400064: L.LegIK.015
+    400066: L.LegIK.015_end
+    400068: R.Bone.003
+    400070: R.Bone.004
+    400072: R.Bone.004_end
+    400074: R.Bone.006
+    400076: R.Bone.007
+    400078: R.Bone.007_end
+    400080: R.Bone.009
+    400082: R.Bone.010
+    400084: R.Bone.010_end
+    400086: R.Bone.012
+    400088: R.Bone.013
+    400090: R.Bone.013_end
+    400092: R.Bone.014
+    400094: R.Bone.014_end
+    400096: R.Leg
+    400098: R.Leg.001
+    400100: R.Leg.002
+    400102: R.Leg.003
+    400104: R.LEG_IK.005
+    400106: R.LEG_IK.005_end
+    400108: R.LEG_IK.008
+    400110: R.LEG_IK.008_end
+    400112: R.LEG_IK.011
+    400114: R.LEG_IK.011_end
+    400116: Spider
+    400118: Spider.005
+    400120: //RootNode
+    2100000: Material.003
+    4300000: Spider.005
+    9500000: //RootNode
+    13700000: Spider.005
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 0
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

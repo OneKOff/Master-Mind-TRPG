@@ -1,0 +1,536 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7560018379152950083
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7560018379152950092}
+  - component: {fileID: 7560018379152950093}
+  - component: {fileID: 7560018379152950091}
+  - component: {fileID: 7560018379152950090}
+  - component: {fileID: 7560018379152950089}
+  - component: {fileID: 7560018379152950088}
+  - component: {fileID: 7560018379152950095}
+  - component: {fileID: 7560018379152950094}
+  - component: {fileID: 7560018379152950141}
+  - component: {fileID: 7560018379152950140}
+  - component: {fileID: 7560018379152950131}
+  - component: {fileID: 7560018379152950130}
+  - component: {fileID: 7560018379152950129}
+  - component: {fileID: 7560018379152950128}
+  - component: {fileID: 7560018379152950135}
+  - component: {fileID: 7560018379152950133}
+  - component: {fileID: 7560018379152950171}
+  - component: {fileID: 7560018379152950169}
+  - component: {fileID: 7560018379152950175}
+  - component: {fileID: 7560018379152950173}
+  - component: {fileID: 7560018379152950163}
+  - component: {fileID: 7560018379152950161}
+  - component: {fileID: 7560018379152950167}
+  - component: {fileID: 7560018379152950165}
+  - component: {fileID: 7560018379152950123}
+  - component: {fileID: 7560018379152950121}
+  - component: {fileID: 7560018379152950127}
+  - component: {fileID: 7560018379152950148}
+  - component: {fileID: 7560018379152950150}
+  m_Layer: 0
+  m_Name: AbilityHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7560018379152950092
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7560018379152950093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d9cb1fe963ed8b0499581554912fc6cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityList:
+  - {fileID: 0}
+  - {fileID: 7560018379152950091}
+  - {fileID: 7560018379152950090}
+  - {fileID: 7560018379152950089}
+  - {fileID: 7560018379152950088}
+  - {fileID: 7560018379152950095}
+  - {fileID: 7560018379152950094}
+  - {fileID: 7560018379152950141}
+  - {fileID: 7560018379152950140}
+  - {fileID: 7560018379152950131}
+  - {fileID: 7560018379152950130}
+  - {fileID: 7560018379152950129}
+  - {fileID: 7560018379152950128}
+  - {fileID: 7560018379152950135}
+  - {fileID: 7560018379152950133}
+  - {fileID: 7560018379152950171}
+  - {fileID: 7560018379152950169}
+  - {fileID: 7560018379152950175}
+  - {fileID: 7560018379152950173}
+  - {fileID: 7560018379152950163}
+  - {fileID: 7560018379152950161}
+  - {fileID: 7560018379152950167}
+  - {fileID: 7560018379152950165}
+  - {fileID: 7560018379152950123}
+  - {fileID: 7560018379152950121}
+  - {fileID: 7560018379152950127}
+  - {fileID: 7560018379152950148}
+  - {fileID: 7560018379152950150}
+--- !u!114 &7560018379152950091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 62c9e157201572a4b82bfea239bebfe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 06d364c5a2868204c92245ba0e35098f, type: 2}
+  abilityEffect: {fileID: 0}
+  soundEffect: {fileID: 11400000, guid: d47396cc2c53b1946b4146304c6c0ec4, type: 2}
+--- !u!114 &7560018379152950090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efd82876c140c934e8197a84c4cb8604, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: c555602c5cdc7af4a8059b17bedb2546, type: 2}
+  abilityEffect: {fileID: 4892236285719594659, guid: e6aa94cf7e552c44dbf98a7b523beba5,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 4ec11dff2a99cd14790477c738e7e977, type: 2}
+--- !u!114 &7560018379152950089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fff94856465e9c040bc81637169c59fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: f8c0db62335974d4793611d569d75782, type: 2}
+  abilityEffect: {fileID: 3753510078559240392, guid: ad01423735ad10847ab60fe59f565c01,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 19e938d37582a3642b459f2740f272ab, type: 2}
+--- !u!114 &7560018379152950088
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f99f88bb1ba7ba448b19b07d4fd28466, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: ca733cc6446408245859966ef0ac62ae, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 19e938d37582a3642b459f2740f272ab, type: 2}
+--- !u!114 &7560018379152950095
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b7f717aa45e02746b0d4c837f130bcb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: c7a46868f894a27458c42e767905a55f, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 029681798d6da24409d9749e6edc6faa, type: 2}
+--- !u!114 &7560018379152950094
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d5cb3aa1196f1645ab3ed06a9f4f158, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 853249018308813488a885e4067cfc1c, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: fd7bf804ec0c1ab48a9cad0171ab139a, type: 2}
+--- !u!114 &7560018379152950141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ba32348b2b88a9488b9d8d4370eaa40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 45cf3333f872f5c448cb33669ce3bdad, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: f853c809f0dde084aad41d33b240d726, type: 2}
+--- !u!114 &7560018379152950140
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a010b23a9ecdf9844b27119c7e1aa904, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 17fd239b02afd8645a3007979d4e4bc7, type: 2}
+  abilityEffect: {fileID: 4892236285719594659, guid: e6aa94cf7e552c44dbf98a7b523beba5,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 4ec11dff2a99cd14790477c738e7e977, type: 2}
+--- !u!114 &7560018379152950131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3484b3fdb025c948b3bb6249e40ecc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 6676e5bfa8af1304093fcc13123cd25f, type: 2}
+  abilityEffect: {fileID: 3753510078559240392, guid: ad01423735ad10847ab60fe59f565c01,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 19e938d37582a3642b459f2740f272ab, type: 2}
+--- !u!114 &7560018379152950130
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b75206edc399d264f8f03e2e9e9a8446, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: fb20bea5cdb87634eb85d173ccb61d38, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 1e622c294b3ad4748a29903fcb2a67d8, type: 2}
+--- !u!114 &7560018379152950129
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5a96869074fed2429ec40c87d30d1ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: a86ded17aea5b93418a0c2b06285c7c0, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 029681798d6da24409d9749e6edc6faa, type: 2}
+--- !u!114 &7560018379152950128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 646b0dbdd2eedbb498d470bf3c9553fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 50f08d6242fbd0345b741c446da33ce9, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 606a83ab17183ee49b71f15ed37236cf, type: 2}
+--- !u!114 &7560018379152950135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 676ed2b347db4a047818d70a6aceaab9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 536074cc51f137e4fbd4e67e2806b9f5, type: 2}
+  abilityEffect: {fileID: 3753510078559240392, guid: ad01423735ad10847ab60fe59f565c01,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: f853c809f0dde084aad41d33b240d726, type: 2}
+--- !u!114 &7560018379152950133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8ca20c7294b58674799f2345f528e0bb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 8a5d34b347e4e7f43ac246ca91ecdc48, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 19e938d37582a3642b459f2740f272ab, type: 2}
+--- !u!114 &7560018379152950171
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3a92f11e56c41d468e402741bba0139, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 34001c1286fe36944a0c1846b4ef0fd9, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 19e938d37582a3642b459f2740f272ab, type: 2}
+--- !u!114 &7560018379152950169
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd2318a1c1693f469985ef07b85146b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 64b74a10a90695f4daac7a1193d10adf, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 1e622c294b3ad4748a29903fcb2a67d8, type: 2}
+--- !u!114 &7560018379152950175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e1d0a8fdfdff6c44958d4c150c26bf0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 0e08647bffb3852408a9f6a5dfdea7f1, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 029681798d6da24409d9749e6edc6faa, type: 2}
+--- !u!114 &7560018379152950173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a76c4f2d23916924f8076a3cd3ab24cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 39e8418d2db9f0045abb95e487190a9e, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 1e622c294b3ad4748a29903fcb2a67d8, type: 2}
+--- !u!114 &7560018379152950163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1ef699a8a6c3bf4d972250d353da2aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 96c00d7b008a64449870e867ebde2c56, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 1e622c294b3ad4748a29903fcb2a67d8, type: 2}
+--- !u!114 &7560018379152950161
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 48f7600417f2528419ebd75c550d7881, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: ca452b72350f7e24c8c39de67ed59ecc, type: 2}
+  abilityEffect: {fileID: 3753510078559240392, guid: ad01423735ad10847ab60fe59f565c01,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 19e938d37582a3642b459f2740f272ab, type: 2}
+--- !u!114 &7560018379152950167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2469938738f72c34ab955ed544eca0f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 4ccf99abeae10e54fab64d1d0b8b88c1, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: f853c809f0dde084aad41d33b240d726, type: 2}
+--- !u!114 &7560018379152950165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbe7d8f68be899e4099ecfb6f97a2c9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: eb0f31359e9a1084f82a3f8e9ae81f6f, type: 2}
+  abilityEffect: {fileID: -62845867293070254, guid: caf5f6f043d1c5b488047f742187f7d9,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: f853c809f0dde084aad41d33b240d726, type: 2}
+--- !u!114 &7560018379152950123
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3be393dff2e677446a0afda34106252a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 41498a6f593a0984eba61630f1a02d2d, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: fd7bf804ec0c1ab48a9cad0171ab139a, type: 2}
+--- !u!114 &7560018379152950121
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de5a5654e2058374da1a9f8f056cd153, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: fb11b424cca546140950b912245d2f4f, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 1e622c294b3ad4748a29903fcb2a67d8, type: 2}
+--- !u!114 &7560018379152950127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55715d0d54201c34484d2d71c21ed3cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: fd760a33e76ba964798a961b38dd9dda, type: 2}
+  abilityEffect: {fileID: -2319821316073943865, guid: 8d7b64d13f486be46956159cac8fae83,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 606a83ab17183ee49b71f15ed37236cf, type: 2}
+--- !u!114 &7560018379152950148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3abefb6ab47697b4db12e8645f49b401, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 806a0e4779c070c469035eb4e3e35d7a, type: 2}
+  abilityEffect: {fileID: 4892236285719594659, guid: e6aa94cf7e552c44dbf98a7b523beba5,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 4ec11dff2a99cd14790477c738e7e977, type: 2}
+  rockEntity: {fileID: 1805585446596136348, guid: 8e52e03a367784949a5081c34e73eda6,
+    type: 3}
+--- !u!114 &7560018379152950150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7560018379152950083}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d73000429946134f83e4d207f75e0cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  abilityData: {fileID: 11400000, guid: 59195091f10c3bb448d85c3b6c9d47d0, type: 2}
+  abilityEffect: {fileID: 4892236285719594659, guid: e6aa94cf7e552c44dbf98a7b523beba5,
+    type: 3}
+  soundEffect: {fileID: 11400000, guid: 4ec11dff2a99cd14790477c738e7e977, type: 2}
+  rockEntity: {fileID: 1805585446596136348, guid: 8e52e03a367784949a5081c34e73eda6,
+    type: 3}
