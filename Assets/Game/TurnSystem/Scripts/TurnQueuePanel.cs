@@ -6,17 +6,17 @@ public class TurnQueuePanel : MonoBehaviour
 {
     [SerializeField] private TurnQueueUnitIcon unitPanelPrefab;
 
-    private readonly TurnQueueUnitIcon[] _queuePanels = new TurnQueueUnitIcon[TurnManager.QUEUE_CAPACITY];
+    [SerializeField] private TurnQueueUnitIcon[] queuePanels = new TurnQueueUnitIcon[TurnManager.QUEUE_CAPACITY];
 
     public void SetQueue()
     {
         var masterIdQueue = GameController.Instance.TurnManager.GetNewQueue();
-        for (var i = 0; i < _queuePanels.Length; i++)
+        for (var i = 0; i < queuePanels.Length; i++)
         {
             if (!GameController.Instance.EntityManager.FindMasterUnitByMasterId(masterIdQueue[i], out var masterUnit)) { continue; }
             
-            _queuePanels[i].ChangePortrait(masterUnit.UnitStats.Portrait);
-            _queuePanels[i].ChangeBackgroundColor(GameController.Instance.TurnManager.TeamColors[masterUnit.UnitStats.TeamId - 1]);
+            queuePanels[i].ChangePortrait(masterUnit.UnitStats.Portrait);
+            queuePanels[i].ChangeBackgroundColor(GameController.Instance.TurnManager.TeamColors[masterUnit.UnitStats.TeamId - 1]);
         }
     }
 }

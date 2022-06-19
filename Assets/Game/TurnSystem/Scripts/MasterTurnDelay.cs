@@ -4,12 +4,14 @@ using UnityEngine;
 public class MasterTurnDelay
 {
     public int MasterId;
+    public int InitialDelay;
     public int RemainingDelay;
 
-    public MasterTurnDelay(int masterId, int remainingDelay)
+    public MasterTurnDelay(int masterId, int initialDelay)
     {
         MasterId = masterId;
-        RemainingDelay = remainingDelay;
+        InitialDelay = initialDelay;
+        RemainingDelay = initialDelay;
     }
 
     public bool MatchesMasterId(int masterId) { return MasterId == masterId; }

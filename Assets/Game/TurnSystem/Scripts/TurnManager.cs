@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class TurnManager : MonoBehaviour
@@ -11,14 +12,14 @@ public class TurnManager : MonoBehaviour
         Color.blue,
         Color.red
     };
-    public List<MasterTurnDelay> Delays = new List<MasterTurnDelay>(); 
+    [HideInInspector] public List<MasterTurnDelay> Delays = new List<MasterTurnDelay>();
+    [HideInInspector] public List<MasterTurnDelay> DelayCopies = new List<MasterTurnDelay>();
 
     [Header("Turn Time")]
     public Timer TurnTimer;
-    public float TurnDuration = 30f;
+    public float TurnDuration = 15f;
 
-    [HideInInspector]
-    public int MasterIndex;
+    [HideInInspector] public int MasterIndex;
     
     public int CurrentMasterId => Delays[MasterIndex].MasterId;
     public int CurrentTeamId
@@ -36,19 +37,20 @@ public class TurnManager : MonoBehaviour
 
     public static int CalculateDelay(int time)
     {
-        return (int)(10000 / Mathf.Sqrt(time));
+        return 1000000 / time;
     }
     
     private void Start()
     {
         // Set on when remaking system
-        // SetTimer();
-        // SetInitialMasterDelays();
-        // ResetStates();
+        Task.Delay(1000);
+        SetTimer();
+        SetInitialMasterDelays();
+        GameController.Instance.UIController.TurnQueuePanel.SetQueue();
     }
     private void OnDisable()
     {
-        TurnTimer.OnTimerElapsed -= TurnTimer_OnTimerElapsed;
+        TurnTimer.OnTimerElapsed -= ResetStates;
     }
     
     private void SetTimer()
@@ -60,7 +62,7 @@ public class TurnManager : MonoBehaviour
 
         TurnTimer.Reset(TurnDuration);
 
-        TurnTimer.OnTimerElapsed += TurnTimer_OnTimerElapsed;
+        TurnTimer.OnTimerElapsed += ResetStates;
     }
 
     public void SetInitialMasterDelays()
@@ -70,51 +72,67 @@ public class TurnManager : MonoBehaviour
 
     public void AddMasterDelays(MasterUnit[] masterUnits)
     {
+        var i = 0;
         foreach (var masterUnit in masterUnits)
         {
-            Delays.Add(new MasterTurnDelay(masterUnit.UnitStats.MasterId, masterUnit.UnitStats.MaxTime));
+            var newDelay = new MasterTurnDelay(masterUnit.UnitStats.MasterId, CalculateDelay(masterUnit.UnitStats.MaxTime));
+            Debug.Log($"Delay {i}: {newDelay.RemainingDelay}");
+            Delays.Add(newDelay);
+            i++;
         }
-    }
-
-    private void TurnTimer_OnTimerElapsed()
-    {
-        ResetStates();
     }
 
     private void ResetStates()
     {
-        MasterIndex = FindLowestDelayWithOffset(0);
+        MasterIndex = FindLowestDelayWithOffset(Delays, 0);
 
-        ReduceAllDelays(Delays[MasterIndex].RemainingDelay);
+        ReduceAllDelays(Delays[MasterIndex].RemainingDelay, MasterIndex);
         
         GameController.Instance.UIController.TurnQueuePanel.SetQueue();
         GameController.Instance.SelectionManager.ResetSelections(SelectionStage.None);
+
+        TurnTimer.Reset();
     }
 
     public int[] GetNewQueue()
     {
         var queue = new int[QUEUE_CAPACITY];
-        var lowestIndex = FindLowestDelayWithOffset(Delays[MasterIndex].RemainingDelay);
-        var offset = Delays[lowestIndex].RemainingDelay;
-        
-        queue[0] = Delays[lowestIndex].MasterId;
+        var delay = 0;
+        var lowestIndex = 0;
 
-        for (var i = 1; i < QUEUE_CAPACITY; i++)
+        DelayCopies.Clear();
+        foreach (var d in Delays)
         {
-            
+            DelayCopies.Add(d);
         }
+        
+        for (var i = 0; i < QUEUE_CAPACITY; i++)
+        {
+            lowestIndex = FindLowestDelayWithOffset(DelayCopies, delay);
+            //delay += DelayCopies[lowestIndex].RemainingDelay;
+            queue[i] = DelayCopies[lowestIndex].MasterId;
+
+            Debug.Log($"Lowest Index {lowestIndex}");
+            Debug.Log($"Queue {i}: {DelayCopies[lowestIndex].MasterId} - {delay}");
+
+            ReduceAllDelayCopies(DelayCopies[lowestIndex].RemainingDelay, lowestIndex);
+        }
+
+        DelayCopies.Clear();
 
         return queue;
     }
 
-    private int FindLowestDelayWithOffset(int offset)
+    private int FindLowestDelayWithOffset(List<MasterTurnDelay> delays, int offset)
     {
         var lowestDelayIndex = 0;
 
-        for (var i = 0; i < QUEUE_CAPACITY; i++)
+        for (var i = 0; i < delays.Count; i++)
         {
-            if (Delays[i].RemainingDelay + offset < Delays[lowestDelayIndex].RemainingDelay + offset &&
-                Delays[i].RemainingDelay + offset >= 0)
+            var currentDelay = delays[i].RemainingDelay - offset;
+            var lowestDelay = delays[lowestDelayIndex].RemainingDelay - offset;
+
+            if (currentDelay < lowestDelay)
             {
                 lowestDelayIndex = i;
             }
@@ -123,14 +141,16 @@ public class TurnManager : MonoBehaviour
         return lowestDelayIndex;
     }
     
-    private int FindLowestDelayWithOffsetPositive(int offset)
+    private int FindLowestDelayWithOffsetPositive(List<MasterTurnDelay> delays, int offset)
     {
         var lowestDelayIndex = 0;
 
-        for (var i = 0; i < QUEUE_CAPACITY; i++)
+        for (var i = 0; i < delays.Count; i++)
         {
-            if (Delays[i].RemainingDelay + offset < Delays[lowestDelayIndex].RemainingDelay + offset &&
-                Delays[i].RemainingDelay + offset > 0)
+            var currentDelay = delays[i].RemainingDelay - offset;
+            var lowestDelay = delays[lowestDelayIndex].RemainingDelay - offset;
+
+            if (currentDelay < lowestDelay && currentDelay > 0)
             {
                 lowestDelayIndex = i;
             }
@@ -139,11 +159,22 @@ public class TurnManager : MonoBehaviour
         return lowestDelayIndex;
     }
 
-    private void ReduceAllDelays(int amount)
+    private void ReduceAllDelays(int amount, int lowestIndex)
     {
         for (var i = 0; i < Delays.Count; i++)
         {
             Delays[i].ReduceDelay(amount);
         }
+
+        Delays[lowestIndex].RemainingDelay += Delays[lowestIndex].InitialDelay;
+    }
+    private void ReduceAllDelayCopies(int amount, int lowestIndex)
+    {
+        for (var i = 0; i < DelayCopies.Count; i++)
+        {
+            DelayCopies[i].ReduceDelay(amount);
+        }
+
+        DelayCopies[lowestIndex].RemainingDelay += DelayCopies[lowestIndex].InitialDelay;
     }
 }

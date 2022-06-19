@@ -91,7 +91,7 @@ public class Ability : MonoBehaviour
 
         CalculateDedication(user, isAbility);
             
-        user.Animator.SetTrigger("UseSpell");
+        user.Animator?.SetTrigger("UseSpell");
         GameController.Instance.UIController.SetId(0, false);
         GameController.Instance.SceneController.SetSelectedAbility(null);
 
